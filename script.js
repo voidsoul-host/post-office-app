@@ -23,6 +23,6 @@ ipApi();
 // async function ipData()
 // https://voidsoul-host.github.io/youtube-clone/
 searchbtn.addEventListener('click', ()=>{
-    document.cookie= `ipAddress=${ipAddress}; path=./result.html`;
-    window.location.href="https://voidsoul-host.github.io/POST-OFFICE-APP/result.html"
+    document.cookie= `ipAddress=${ipAddress}; path=https://voidsoul-host.github.io/post-office-app/result.html`;
+    window.location.href="https://voidsoul-host.github.io/post-office-app/result.html"
 });
