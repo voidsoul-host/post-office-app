@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Made by Sanskar Purohit">
+    <title>Post Office Locator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container2">
+    <div class="resultpage">
+        <p id="text">IP Address : <span id="myIp">127.0.01</span></p>
+    </div>
+    <div class="IpData">
+        <div>
+            <p id="text">Lat: <span id="lat"></span></p>
+            <p id="text">Long: <span id="long"></span></p>
+        </div>
+        <div>
+            <p id="text">City: <span id="city"></span></p>
+            <p id="text">Region: <span id="region"></span></p>
+            
+        </div>
+        <div>
+            <p id="text">Organisation: <span id="org"></span></p>
+            <p id="text">Hostname: <span id="host"></span></p>
+        </div>
+    </div>
+    <div class="map">
+        <h1 id="headings">Your Current Location</h1>
+        <iframe id="iMap"  width="100%" height="90%" frameborder="0" style="border:0"></iframe>
+    </div>
+    <div class="MoreInfo">
+        <h1 id="headings">More Information About You</h1>
+        <p>Time Zone: <span id="timeZone"></span></p>
+        <p>Date And Time: <span id="dateandTime"></span></p>
+        <p>Pincode: <span id="zipcode"></span></p>
+        <p>Message: Number of pincode(s) found: <span id="founded"></span></p>
+    </div>
+    <h1 id="headings">Post Offices Near You</h1>
+    <div class="searchBox">
+        <input type="text" name="" id="searchBox" placeholder="Search By Name">
+    </div>
+    <div class="card" id="card">
+
+    </div>
+</div>
+<script src="result.js"></script>
+</body>
+</html>

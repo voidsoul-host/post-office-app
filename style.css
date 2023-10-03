@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@700&family=Mulish:wght@700&display=swap');
+
+*{padding: 0;margin: 0;}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left{
+    width: 50%;
+    background-color: black;
+}
+h1{
+    color: #575A85;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 700;
+    /* line-height: 44px;
+    margin-left: 2rem;
+    margin-top: 1rem; */
+}
+p{
+    color: white;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    padding-left: 2rem;
+}
+#indeximage{
+    width: 300px;
+    height: 300px;
+    margin-left: 12vw;
+    margin-top: 8vw;
+}
+.right{
+    width: 50%;
+    background: #575A85;
+    height: 100%;
+}
+#iptext{
+    color: #B8BCCC;
+    margin-top: 20rem;
+    margin-left: 10rem;
+}
+#ip{
+    color: #FFFFFF;
+}
+#searchbtn{
+    background: #575A85;
+    border-radius: 5px;
+    padding: 16px 70px;
+    text-decoration: none;
+    margin-left: 15rem;
+    margin-top: 1rem;
+}
+
+/* --------------------------------------------MEDIA QUERY---------------------------- */
+@media screen and (min-width: 320px) and (max-width: 480px){
+    h1 {
+        color: #575A85;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    p {
+        color: white;
+        font-family: Inter;
+        font-size: 5px;
+    }
+    #indeximage {
+        width: 145px;
+        height: 154px;
+        margin-left: 10vw;
+        margin-top: 10vw;
+    }
+    #iptext {
+        color: #B8BCCC;
+        margin-top: 13rem;
+        margin-left: 5rem;
+    }
+    #searchbtn {
+        background: #575A85;
+        border-radius: 5px;
+        padding: 0px 11px;
+        text-decoration: none;
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px){
+    h1 {
+        color: #575A85;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    p {
+        color: white;
+        font-family: Inter;
+        font-size: 5px;
+        font-weight: 400;
+        /* margin-top: 2rem; */
+    }
+    #indeximage {
+        width: 213px;
+        height: 213px;
+        margin-left: 3vw;
+        margin-top: 10vw;
+    }
+    #iptext {
+        color: #B8BCCC;
+        margin-top: 15rem;
+        margin-left: 5rem;
+    }
+    #searchbtn {
+        background: #575A85;
+        border-radius: 5px;
+        padding: 1px 20px;
+        text-decoration: none;
+        margin-left: 4rem;
+        /* margin-top: 1rem; */
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    h1 {
+        color: #575A85;
+        font-family: Montserrat;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    p {
+        color: white;
+        font-family: Inter;
+        font-size: 10px;
+        font-weight: 400;
+        /* margin-top: 2rem; */
+    }
+    #indeximage {
+        width: 300px;
+        height: 300px;
+        margin-left: 8vw;
+        margin-top: 10vw;
+    }
+    #iptext {
+        color: #B8BCCC;
+        margin-top: 18rem;
+        margin-left: 9rem;
+    }
+    #searchbtn {
+
+        background: #575A85;
+        border-radius: 5px;
+        padding: 11px 70px;
+        text-decoration: none;
+        margin-left: 8rem;
+        /* margin-top: 1rem; */
+    }
+}
+
+/*? ---------------------------------------------2ND PAGE------------------------------------------ */
+
+.container2{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+#text{
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: left;
+    color: #B8BCCC;
+}
+#text span{
+    color: white;
+}
+.IpData{
+    
+    margin-top: 1rem;
+    margin-inline: auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.map{
+    background-color: #575A85;
+    margin-top: 2rem;
+    width: 100%;
+    height: 70vh;
+}
+#headings{
+color: #B8BCCC;
+text-align: center;
+font-family: Montserrat;
+font-size: 44px;
+}
+.MoreInfo{
+    margin-top: 1rem;
+    color: #B8BCCC80;
+}
+.MoreInfo > p{
+    color: #B8BCCC80;
+}
+.searchBox{
+    display: flex;
+    justify-content: center;
+}
+#searchBox{
+    background-color: #B8BCCC;
+    width: 90vw;
+    height: 8vh;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    overflow-x: hidden;
+    justify-content: space-around;
+    margin-top: 1rem;
+    gap: 0.8rem;
+}
+.mycard{
+    background-color: #575A85;
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    width: 22rem;
+    height: 10rem;
+    margin-bottom: 10px;
+}
+.mycard-row{
+    text-align: left;
+    text-wrap: wrap;
+}
+
+/* --------------------------------------------MEDIA QUERY FOR 2ND PAGE----------------------------------- */
+@media (max-width: 768px) {
+    .MoreInfo p{
+        font-size: medium;
+    }
+}
+@media (max-width: 425px){
+    .map, .MoreInfo, h1{
+        font-size: 22px !important;
+    }
+    #iMap{
+        height: 90% !important;
+    }
+    .mycard{
+        width: 18rem;
+        padding: 0;
+        font-size: 14px;
+    }
+}
