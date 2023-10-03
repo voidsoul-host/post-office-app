@@ -79,6 +79,7 @@ async function postalFetch(pincode){
       const postalUrl = ` https://api.postalpincode.in/pincode/${pincode}`
       let response = await fetch(postalUrl);
       let result = await response.json();
+      document.getElementById('founded').innerText=`${result[0].Message}`;
       renderCardstoUI(result[0].PostOffice);
     }
     catch(error){
@@ -90,6 +91,7 @@ async function postalFetch(pincode){
 // render Cards to ui
 function renderCardstoUI(dataList){
   const cardContainer= document.getElementById('card');
+  
   dataList.forEach((item)=>{
     const divElement =document.createElement('div') ;
     divElement.className = "mycard";
